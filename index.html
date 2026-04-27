@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title data-i18n="meta.title">Visto Gold Portugal | Daniela Neves Advogados</title>
+  <meta name="description" data-i18n="meta.desc" content="Obtenha sua residência legal em Portugal através do Golden Visa. Assessoria jurídica em imigração com a Dra. Daniela Neves, OA 47953L."/>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18118843020"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18118843020');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; overflow-x: hidden; }
+    img  { display: block; max-width: 100%; }
+    a    { text-decoration: none; color: inherit; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+
+    /* ── TOKENS ── */
+    :root {
+      --gold:   #C9A32E;
+      --gold-lt:#E8C55A;
+      --green:  #16a34a;
+      --green-lt:#22c55e;
+      --dark:   #0a0a0a;
+      --dark2:  #111111;
+      --dark3:  #1a1a1a;
+      --border: rgba(255,255,255,0.1);
+      --text-muted: rgba(255,255,255,0.55);
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-icon { width: 36px; height: 36px; }
+    .logo-text { line-height: 1.15; }
+    .logo-name { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: .3px; }
+    .logo-sub  { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; }
+
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+
+    /* Language switcher */
+    .lang-sw { display: flex; align-items: center; gap: 2px; }
+    .lang-btn {
+      background: none; border: none; cursor: pointer;
+      font-size: 12px; font-weight: 600; color: var(--text-muted);
+      padding: 5px 8px; border-radius: 5px; transition: all .2s;
+      font-family: 'Inter', sans-serif; letter-spacing: .3px;
+    }
+    .lang-btn:hover  { color: #fff; }
+    .lang-btn.active { color: #fff; background: rgba(255,255,255,.1); }
+    .lang-sep { color: var(--border); font-size: 12px; }
+
+    .btn-header {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green); color: #fff;
+      font-size: 13.5px; font-weight: 700; padding: 10px 20px;
+      border-radius: 7px; transition: all .2s; white-space: nowrap;
+    }
+    .btn-header:hover { background: var(--green-lt); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      overflow: hidden; padding-top: 68px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.pexels.com/photos/9253/pexels-photo-9253.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80');
+      background-size: cover; background-position: center 55%;
+      animation: kb 22s ease-in-out infinite alternate;
+    }
+    @keyframes kb {
+      0%   { transform: scale(1) translateX(0); }
+      100% { transform: scale(1.07) translateX(-1%); }
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,.82) 0%, rgba(0,0,0,.60) 55%, rgba(0,0,0,.25) 100%);
+    }
+    .hero-overlay2 {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 220px;
+      background: linear-gradient(to top, #0a0a0a 0%, transparent 100%);
+    }
+    .hero-inner {
+      position: relative; z-index: 10; padding: 80px 0 100px; max-width: 680px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: #000;
+      font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 4px; margin-bottom: 28px;
+    }
+    .hero-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: clamp(38px, 6vw, 72px);
+      font-weight: 900; line-height: 1.05;
+      margin-bottom: 22px; color: #fff;
+    }
+    .hero-title em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-size: 17px; color: rgba(255,255,255,.75);
+      line-height: 1.75; margin-bottom: 40px; max-width: 560px;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 60px; }
+
+    .btn-green {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: var(--green); color: #fff;
+      font-size: 15px; font-weight: 700; padding: 15px 28px;
+      border-radius: 8px; transition: all .2s; border: none; cursor: pointer;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-green:hover { background: var(--green-lt); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(22,163,74,.4); }
+
+    .btn-outline-gold {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: transparent; color: var(--gold);
+      font-size: 15px; font-weight: 700; padding: 14px 28px;
+      border-radius: 8px; border: 2px solid var(--gold); transition: all .2s; cursor: pointer;
+    }
+    .btn-outline-gold:hover { background: rgba(201,163,46,.12); transform: translateY(-2px); }
+
+    /* Stats row */
+    .hero-stats { display: flex; gap: 40px; flex-wrap: wrap; }
+    .hstat-num {
+      font-family: 'Barlow', sans-serif;
+      font-size: 30px; font-weight: 900; color: var(--gold); line-height: 1;
+    }
+    .hstat-label { font-size: 12px; color: rgba(255,255,255,.5); margin-top: 4px; }
+
+    /* ── SECTION BASE ── */
+    .section { padding: 90px 0; }
+    .section-dark  { background: var(--dark); }
+    .section-dark2 { background: var(--dark2); }
+    .section-dark3 { background: var(--dark3); }
+
+    .eyebrow {
+      font-size: 11px; font-weight: 800; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+    }
+    .sec-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: clamp(28px, 4vw, 46px);
+      font-weight: 900; line-height: 1.1; color: #fff;
+      margin-bottom: 16px;
+    }
+    .sec-title em { color: var(--gold); font-style: normal; }
+    .sec-sub { font-size: 16px; color: var(--text-muted); line-height: 1.75; max-width: 580px; }
+    .center { text-align: center; }
+    .center .sec-sub { margin: 0 auto; }
+    .gold-bar { width: 48px; height: 3px; background: var(--gold); margin: 18px 0; }
+    .gold-bar.c { margin: 18px auto; }
+
+    /* ── BENEFITS ── */
+    .benefits-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+      background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+      margin-top: 56px;
+    }
+    @media(max-width:860px){ .benefits-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:520px){ .benefits-grid { grid-template-columns: 1fr; } }
+
+    .bitem {
+      background: var(--dark2); padding: 34px 28px;
+      transition: background .2s;
+    }
+    .bitem:hover { background: var(--dark3); }
+    .bitem-icon { font-size: 34px; margin-bottom: 16px; }
+    .bitem-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .bitem-text  { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── INVESTMENT ── */
+    .invest-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 52px; }
+    @media(max-width:860px){ .invest-grid { grid-template-columns: 1fr; } }
+
+    .icard {
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 32px 28px; background: var(--dark3);
+      transition: border-color .25s, transform .2s;
+      position: relative; overflow: hidden;
+    }
+    .icard:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .icard.pop { border-color: var(--gold); }
+    .icard-top {
+      position: absolute; top: -1px; left: 24px;
+      background: var(--gold); color: #000;
+      font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 0 0 8px 8px;
+    }
+    .icard-amount {
+      font-family: 'Barlow', sans-serif; font-size: 40px; font-weight: 900;
+      color: var(--gold); line-height: 1; margin-bottom: 8px;
+    }
+    .icard-type  { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 12px; }
+    .icard-desc  { font-size: 13.5px; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── PROCESS ── */
+    .process-grid {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 0; margin-top: 56px; position: relative;
+    }
+    @media(max-width:860px){ .process-grid { grid-template-columns: repeat(2,1fr); gap: 1px; background: var(--border); } }
+    @media(max-width:520px){ .process-grid { grid-template-columns: 1fr; } }
+
+    .process-grid::before {
+      content: '';
+      position: absolute; top: 36px;
+      left: calc(12.5% + 18px); right: calc(12.5% + 18px);
+      height: 1px; background: var(--gold); z-index: 0;
+    }
+    @media(max-width:860px){ .process-grid::before { display: none; } }
+
+    .pstep { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+    .pstep-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--dark2); border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-family: 'Barlow', sans-serif; font-size: 26px; font-weight: 900; color: var(--gold);
+    }
+    .pstep-title { font-size: 14px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .pstep-desc  { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── ABOUT ── */
+    .about-grid { display: grid; grid-template-columns: 420px 1fr; gap: 72px; align-items: start; }
+    @media(max-width:900px){ .about-grid { grid-template-columns: 1fr; } }
+
+    .about-img {
+      border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--border); position: relative;
+    }
+    .about-img img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; }
+    .about-img-badge {
+      position: absolute; bottom: -16px; right: -16px;
+      background: var(--gold); color: #000; border-radius: 10px;
+      padding: 18px 22px; text-align: center; min-width: 120px;
+    }
+    .about-img-badge-num {
+      font-family: 'Barlow', sans-serif; font-size: 30px; font-weight: 900; line-height: 1;
+    }
+    .about-img-badge-label { font-size: 11px; font-weight: 700; margin-top: 3px; }
+
+    .cred-list { display: flex; flex-direction: column; gap: 10px; margin: 24px 0; }
+    .cred-item {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: var(--dark3); border: 1px solid var(--border);
+      border-radius: 10px; padding: 13px 16px;
+    }
+    .cred-ic  { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+    .cred-ttl { font-size: 13.5px; font-weight: 700; color: #fff; }
+    .cred-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 760px; margin: 52px auto 0; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+      padding: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 20px;
+      font-size: 15px; font-weight: 600; color: #fff;
+      font-family: 'Inter', sans-serif; transition: color .2s;
+    }
+    .faq-q:hover { color: var(--gold); }
+    .faq-arr {
+      width: 28px; height: 28px; border-radius: 50%;
+      border: 1px solid var(--gold); background: none;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--gold); font-size: 12px; flex-shrink: 0;
+      transition: transform .3s, background .2s;
+    }
+    .faq-item.open .faq-arr { transform: rotate(180deg); background: var(--gold); color: #000; }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      font-size: 14px; color: var(--text-muted); line-height: 1.75;
+      transition: max-height .38s ease, padding .28s;
+    }
+    .faq-item.open .faq-a { max-height: 350px; padding-bottom: 22px; }
+
+    /* ── OFFICES ── */
+    .offices-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 52px; }
+    @media(max-width:680px){ .offices-grid { grid-template-columns: 1fr; } }
+
+    .office-card {
+      border: 1px solid var(--border); border-radius: 12px;
+      padding: 30px 28px; background: var(--dark3);
+      transition: border-color .2s;
+    }
+    .office-card:hover { border-color: var(--gold); }
+    .office-flag { font-size: 32px; margin-bottom: 14px; }
+    .office-country { font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .office-addr { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.7; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      position: relative; padding: 100px 0; text-align: center; overflow: hidden;
+    }
+    .cta-band-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.pexels.com/photos/20715206/pexels-photo-20715206.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80');
+      background-size: cover; background-position: center; background-attachment: fixed;
+    }
+    .cta-band-ov { position: absolute; inset: 0; background: rgba(0,0,0,.80); }
+    .cta-band-inner { position: relative; z-index: 10; }
+    .cta-band-title {
+      font-family: 'Barlow', sans-serif;
+      font-size: clamp(30px,5vw,56px); font-weight: 900; color: #fff; margin-bottom: 16px;
+    }
+    .cta-band-title em { color: var(--gold); font-style: normal; }
+    .cta-band-sub {
+      font-size: 17px; color: rgba(255,255,255,.65);
+      margin: 0 auto 36px; max-width: 520px;
+    }
+    .cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060606; border-top: 1px solid var(--border);
+      padding: 56px 0 28px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.8fr 1fr 1fr; gap: 48px; margin-bottom: 44px;
+    }
+    @media(max-width:760px){ .footer-grid { grid-template-columns: 1fr; gap: 32px; } }
+
+    .footer-logo-name { font-size: 17px; font-weight: 700; color: #fff; }
+    .footer-logo-sub  { font-size: 9px; font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase; margin-top: 3px; }
+    .footer-desc { font-size: 13px; color: var(--text-muted); line-height: 1.75; margin: 16px 0 20px; max-width: 280px; }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social a {
+      width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; transition: all .2s;
+    }
+    .footer-social a:hover { border-color: var(--gold); background: rgba(201,163,46,.12); }
+    .fcol-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 14px; }
+    .fcol ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .fcol ul li a { font-size: 13px; color: var(--text-muted); transition: color .2s; }
+    .fcol ul li a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 22px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,.25); }
+    .oa-badge {
+      background: rgba(201,163,46,.12); border: 1px solid rgba(201,163,46,.3);
+      border-radius: 5px; padding: 4px 10px;
+      font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: .3px;
+    }
+
+    /* ── FLOATING WA ── */
+    .float-wa {
+      position: fixed; bottom: 26px; right: 26px; z-index: 999;
+      width: 58px; height: 58px; background: var(--green-lt); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; box-shadow: 0 4px 22px rgba(34,197,94,.5); transition: transform .2s;
+    }
+    .float-wa:hover { transform: scale(1.12); }
+    .wa-ring {
+      position: absolute; inset: -6px; border-radius: 50%;
+      background: rgba(34,197,94,.25); animation: ring 2.4s ease-out infinite;
+    }
+    @keyframes ring { 0%{transform:scale(.9);opacity:1} 70%{transform:scale(1.3);opacity:0} 100%{transform:scale(.9);opacity:0} }
+
+    /* ── SCROLL REVEAL ── */
+    .sr { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .sr.in { opacity: 1; transform: none; }
+    .sr.d1 { transition-delay: .1s; } .sr.d2 { transition-delay: .2s; }
+    .sr.d3 { transition-delay: .3s; } .sr.d4 { transition-delay: .4s; }
+
+    /* ── RESPONSIVE MISC ── */
+    @media(max-width:680px) {
+      .nav-right .lang-sw { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ FLOATING WHATSAPP ══ -->
+<a href="https://wa.link/27opxs?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Golden%20Visa%20Portugal" target="_blank" class="float-wa" title="WhatsApp">
+  <div class="wa-ring"></div>
+  <span style="position:relative;z-index:1">💬</span>
+</a>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="container">
+    <nav class="nav">
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <img src="https://danielaneves.adv.br/wp-content/uploads/2024/08/LOGO-3.png" alt="Daniela Neves Advogados" class="logo-icon" style="width:42px;height:42px;object-fit:contain;filter:invert(1);mix-blend-mode:screen;"/>
+        <div class="logo-text">
+          <div class="logo-name">Daniela Neves</div>
+          <div class="logo-sub">Advogados</div>
+        </div>
+      </a>
+
+      <div class="nav-right">
+        <!-- LANGUAGE SWITCHER -->
+        <div class="lang-sw">
+          <button class="lang-btn active" onclick="setLang('pt')">PT</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" onclick="setLang('es')">ES</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" onclick="setLang('zh')">中文</button>
+        </div>
+        <a href="https://wa.link/27opxs" target="_blank" class="btn-header">
+          <span>💬</span> <span data-i18n="nav.cta">Fale Conosco</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay2"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge">+ <span data-i18n="hero.badge">Golden Visa Portugal</span></div>
+      <h1 class="hero-title" data-i18n-html="hero.title">
+        Viva, Trabalhe e <em>Invista em Portugal</em>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Obtenha a sua residência legal em Portugal através do Golden Visa. Assessoria jurídica em imigração, processo orientado e dedicação total ao seu caso.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.link/27opxs?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Golden%20Visa%20Portugal" target="_blank" class="btn-green">
+          <span>💬</span> <span data-i18n="hero.btn1">Fale Conosco no WhatsApp</span>
+        </a>
+        <a href="#como-funciona" class="btn-outline-gold">
+          <span data-i18n="hero.btn2">Como Funciona</span> ↓
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hstat-num">500+</div>
+          <div class="hstat-label" data-i18n="hero.stat1">Clientes Atendidos</div>
+        </div>
+        <div>
+          <div class="hstat-num">95%</div>
+          <div class="hstat-label" data-i18n="hero.stat2">Taxa de Aprovação</div>
+        </div>
+        <div>
+          <div class="hstat-num">15+</div>
+          <div class="hstat-label" data-i18n="hero.stat3">Anos de Experiência</div>
+        </div>
+        <div>
+          <div class="hstat-num">3</div>
+          <div class="hstat-label" data-i18n="hero.stat4">Escritórios</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BENEFÍCIOS ══ -->
+<section class="section section-dark" id="beneficios">
+  <div class="container">
+    <div class="sr center">
+      <div class="eyebrow" data-i18n="ben.eyebrow">Por que Portugal?</div>
+      <h2 class="sec-title" data-i18n-html="ben.title">As Vantagens do <em>Golden Visa</em></h2>
+      <div class="gold-bar c"></div>
+      <p class="sec-sub" data-i18n="ben.sub">O programa ARI oferece um dos caminhos mais flexíveis do mundo para a residência europeia.</p>
+    </div>
+    <div class="benefits-grid sr">
+      <div class="bitem">
+        <div class="bitem-icon">🛂</div>
+        <div class="bitem-title" data-i18n="ben.1.t">Residência em Portugal</div>
+        <p class="bitem-text" data-i18n="ben.1.d">Residência legal com apenas 7 dias de permanência por ano. Mantenha a sua vida onde quiser.</p>
+      </div>
+      <div class="bitem">
+        <div class="bitem-icon">👨‍👩‍👧‍👦</div>
+        <div class="bitem-title" data-i18n="ben.2.t">Reunificação Familiar</div>
+        <p class="bitem-text" data-i18n="ben.2.d">Inclua cônjuge, filhos e pais no mesmo processo. A família toda protegida sob um único visto.</p>
+      </div>
+      <div class="bitem">
+        <div class="bitem-icon">🇪🇺</div>
+        <div class="bitem-title" data-i18n="ben.3.t">Cidadania a partir de 5 Anos</div>
+        <p class="bitem-text" data-i18n="ben.3.d">Após 5 anos, pode solicitar a cidadania portuguesa e obter um dos passaportes mais poderosos do mundo.</p>
+      </div>
+      <div class="bitem">
+        <div class="bitem-icon">🌍</div>
+        <div class="bitem-title" data-i18n="ben.4.t">Área Schengen Livre</div>
+        <p class="bitem-text" data-i18n="ben.4.d">Acesso sem visto a 26 países europeus. Liberdade de circulação por toda a Europa.</p>
+      </div>
+      <div class="bitem">
+        <div class="bitem-icon">💼</div>
+        <div class="bitem-title" data-i18n="ben.5.t">Trabalho em Toda a UE</div>
+        <p class="bitem-text" data-i18n="ben.5.d">Como cidadão português, aceda ao mercado de trabalho dos 27 países da União Europeia.</p>
+      </div>
+      <div class="bitem">
+        <div class="bitem-icon">🎓</div>
+        <div class="bitem-title" data-i18n="ben.6.t">Educação de Excelência</div>
+        <p class="bitem-text" data-i18n="ben.6.d">Acesso às melhores universidades da Europa com propinas reduzidas para residentes portugueses.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INVESTIMENTO ══ -->
+<section class="section section-dark2" id="investimento">
+  <div class="container">
+    <div class="sr">
+      <div class="eyebrow" data-i18n="inv.eyebrow">Modalidades de Investimento</div>
+      <h2 class="sec-title" data-i18n-html="inv.title">Escolha a Via <em>Certa para Si</em></h2>
+      <div class="gold-bar"></div>
+      <p class="sec-sub" data-i18n="inv.sub">Desde outubro de 2023, o investimento imobiliário foi encerrado. As opções qualificantes disponíveis são:</p>
+    </div>
+    <div class="invest-grid">
+      <div class="icard pop sr">
+        <div class="icard-top" data-i18n="inv.pop">✦ Mais Popular</div>
+        <div class="icard-amount">€500K</div>
+        <div class="icard-type" data-i18n="inv.1.t">Fundos de Investimento</div>
+        <p class="icard-desc" data-i18n="inv.1.d">Fundos regulados pela CMVM — private equity, venture capital, energia renovável, tecnologia e saúde. Maturidade mínima de 5 anos.</p>
+      </div>
+      <div class="icard sr d1">
+        <div class="icard-amount">€250K</div>
+        <div class="icard-type" data-i18n="inv.2.t">Doação Cultural</div>
+        <p class="icard-desc" data-i18n="inv.2.d">Doação para preservação do património cultural e artístico nacional. Redução para €200K em zonas de baixa densidade.</p>
+      </div>
+      <div class="icard sr d2">
+        <div class="icard-amount">€500K</div>
+        <div class="icard-type" data-i18n="inv.3.t">Criação de Emprego</div>
+        <p class="icard-desc" data-i18n="inv.3.d">Investimento em empresa existente com criação de mínimo 5 postos de trabalho a tempo inteiro por 3 anos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESSO ══ -->
+<section class="section section-dark" id="como-funciona">
+  <div class="container">
+    <div class="sr center">
+      <div class="eyebrow" data-i18n="proc.eyebrow">Como Funciona</div>
+      <h2 class="sec-title" data-i18n-html="proc.title"><em>4 Etapas</em> para a Sua Residência</h2>
+      <div class="gold-bar c"></div>
+    </div>
+    <div class="process-grid sr">
+      <div class="pstep">
+        <div class="pstep-num">1</div>
+        <div class="pstep-title" data-i18n="proc.1.t">Consulta Inicial</div>
+        <p class="pstep-desc" data-i18n="proc.1.d">Analisamos o seu perfil, objetivos e elegibilidade para o programa.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">2</div>
+        <div class="pstep-title" data-i18n="proc.2.t">Documentação</div>
+        <p class="pstep-desc" data-i18n="proc.2.d">Preparamos e revisamos toda a documentação necessária para a candidatura.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">3</div>
+        <div class="pstep-title" data-i18n="proc.3.t">Investimento</div>
+        <p class="pstep-desc" data-i18n="proc.3.d">Orientamos na escolha e execução do investimento qualificado.</p>
+      </div>
+      <div class="pstep">
+        <div class="pstep-num">4</div>
+        <div class="pstep-title" data-i18n="proc.4.t">Submissão & Aprovação</div>
+        <p class="pstep-desc" data-i18n="proc.4.d">Submetemos o pedido junto à AIMA e acompanhamos até à emissão do título de residência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SOBRE ══ -->
+<section class="section section-dark2" id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img sr">
+        <img src="https://danielaneves.adv.br/wp-content/uploads/2026/02/eedb4b3b-37c0-4448-9a77-82a6c2ff9552-752x1024.jpg"
+             alt="Dra. Daniela Neves Martins" loading="lazy"/>
+        <div class="about-img-badge">
+          <div class="about-img-badge-num">15+</div>
+          <div class="about-img-badge-label" data-i18n="about.badge">Anos Exp.</div>
+        </div>
+      </div>
+      <div class="sr d1">
+        <div class="eyebrow" data-i18n="about.eyebrow">A Advogada</div>
+        <h2 class="sec-title" data-i18n-html="about.title">Dra. Daniela <em>Neves Martins</em></h2>
+        <div class="gold-bar"></div>
+        <p style="font-size:15.5px;color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:14px;" data-i18n="about.p1">
+          Advogada com dupla inscrição em Portugal e no Brasil, com escritório em Lisboa no Parque das Nações. Com foco no direito da imigração, acompanha clientes de todo o mundo no processo do Golden Visa.
+        </p>
+        <p style="font-size:14.5px;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:28px;" data-i18n="about.p2">
+          Com domínio fluente de português, inglês, espanhol e conhecimento do mercado internacional, oferece uma perspetiva única para investidores de qualquer país.
+        </p>
+        <div class="cred-list">
+          <div class="cred-item">
+            <div class="cred-ic">⚖️</div>
+            <div>
+              <div class="cred-ttl">OA 47953L — Ordem dos Advogados de Portugal</div>
+              <div class="cred-sub" data-i18n="about.c1">Inscrita desde 2009 · Direito da Imigração</div>
+            </div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-ic">🇧🇷</div>
+            <div>
+              <div class="cred-ttl">OAB/SP 282.534 — Ordem dos Advogados do Brasil</div>
+              <div class="cred-sub" data-i18n="about.c2">Seccional São Paulo · Inscrita desde 2008</div>
+            </div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-ic">🎓</div>
+            <div>
+              <div class="cred-ttl" data-i18n="about.c3t">Mestre em Ciências Jurídico-Forenses</div>
+              <div class="cred-sub">Faculdade de Direito · Universidade de Lisboa (FDUL)</div>
+            </div>
+          </div>
+          <div class="cred-item">
+            <div class="cred-ic">✉️</div>
+            <div>
+              <div class="cred-ttl">danielaneves-47953l@adv.oa.pt</div>
+              <div class="cred-sub" data-i18n="about.c4">Contacto profissional</div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+          <a href="https://wa.link/27opxs" target="_blank" class="btn-green" data-i18n="about.btn">Agendar Consulta</a>
+          <a href="https://www.instagram.com/danielaneves.adv.pt/" target="_blank" class="btn-outline-gold">📸 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="section section-dark" id="faq">
+  <div class="container">
+    <div class="sr center">
+      <div class="eyebrow" data-i18n="faq.eyebrow">FAQ</div>
+      <h2 class="sec-title" data-i18n-html="faq.title">Tire as Suas <em>Dúvidas</em></h2>
+      <div class="gold-bar c"></div>
+    </div>
+    <div class="faq-list sr">
+      <div class="faq-item open">
+        <button class="faq-q" onclick="faqToggle(this)">
+          <span data-i18n="faq.1.q">Preciso morar em Portugal para manter o Golden Visa?</span>
+          <div class="faq-arr">▼</div>
+        </button>
+        <div class="faq-a" data-i18n="faq.1.a">Não. O Golden Visa exige apenas 7 dias de permanência por ano no primeiro período e 14 dias nos períodos seguintes de 2 anos. Pode manter a sua vida no país de origem.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          <span data-i18n="faq.2.q">Qual é o valor mínimo de investimento?</span>
+          <div class="faq-arr">▼</div>
+        </button>
+        <div class="faq-a" data-i18n="faq.2.a">O investimento mínimo mais utilizado é de €500.000 em fundos de investimento qualificados. A opção de doação cultural começa em €250.000.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          <span data-i18n="faq.3.q">Quanto tempo leva o processo?</span>
+          <div class="faq-arr">▼</div>
+        </button>
+        <div class="faq-a" data-i18n="faq.3.a">O prazo médio de análise pela AIMA é de 12 a 18 meses em 2025, com melhoria significativa face aos anos anteriores. O prazo de 5 anos para cidadania conta desde a data de submissão.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          <span data-i18n="faq.4.q">Posso incluir a minha família?</span>
+          <div class="faq-arr">▼</div>
+        </button>
+        <div class="faq-a" data-i18n="faq.4.a">Sim. O Golden Visa permite incluir cônjuge ou parceiro de facto, filhos menores (e maiores dependentes) e pais dependentes no mesmo processo.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="faqToggle(this)">
+          <span data-i18n="faq.5.q">O Golden Visa ainda existe em Portugal?</span>
+          <div class="faq-arr">▼</div>
+        </button>
+        <div class="faq-a" data-i18n="faq.5.a">Sim, o programa continua ativo. Em 2023, a rota imobiliária foi encerrada, mas as rotas via fundos de investimento, doação cultural e criação de emprego seguem disponíveis.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-band" id="contacto">
+  <div class="cta-band-bg"></div>
+  <div class="cta-band-ov"></div>
+  <div class="container cta-band-inner sr">
+    <div class="eyebrow" style="color:var(--gold-lt);display:block;margin-bottom:14px;" data-i18n="cta.eyebrow">⚠️ Alerta Legislativo</div>
+    <h2 class="cta-band-title" data-i18n-html="cta.title">Inicie Hoje o Seu<br/><em>Processo de Residência</em></h2>
+    <p class="cta-band-sub" data-i18n="cta.sub">Uma proposta legislativa em tramitação pode alterar o prazo para a cidadania. Quem iniciar agora garante as regras atuais de 5 anos.</p>
+    <div class="cta-btns">
+      <a href="https://wa.link/27opxs?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Golden%20Visa%20Portugal" target="_blank" class="btn-green" style="font-size:15px;padding:16px 30px;" data-i18n="cta.btn1">💬 Falar no WhatsApp</a>
+      <a href="https://danielaneves.adv.br/" target="_blank" class="btn-outline-gold" data-i18n="cta.btn2">🌐 Visitar Website</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ESCRITÓRIOS ══ -->
+<section class="section section-dark2" id="escritorios">
+  <div class="container">
+    <div class="sr center">
+      <div class="eyebrow" data-i18n="off.eyebrow">Onde Estamos</div>
+      <h2 class="sec-title" data-i18n-html="off.title">Os Nossos <em>Escritórios</em></h2>
+      <div class="gold-bar c"></div>
+    </div>
+    <div class="offices-grid sr">
+      <div class="office-card">
+        <div class="office-flag">🇵🇹</div>
+        <div class="office-country">Portugal</div>
+        <div class="office-addr">
+          Avenida João II, 35B, Sala 7A<br/>
+          Edifício Infante · Parque das Nações<br/>
+          Lisboa — 1990-083<br/><br/>
+          <a href="mailto:danielaneves-47953l@adv.oa.pt" style="color:var(--gold);">danielaneves-47953l@adv.oa.pt</a>
+        </div>
+      </div>
+      <div class="office-card">
+        <div class="office-flag">🇧🇷</div>
+        <div class="office-country">Brasil</div>
+        <div class="office-addr">
+          Alameda Armenio Mendes, nº 66<br/>
+          6º andar, sala 1002 · Edifício Corporate<br/>
+          Santos, São Paulo — 11035-260
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;">
+          <img src="https://danielaneves.adv.br/wp-content/uploads/2024/08/LOGO-3.png" alt="Daniela Neves Advogados" style="width:40px;height:40px;object-fit:contain;filter:invert(1);mix-blend-mode:screen;"/>
+          <div>
+            <div class="footer-logo-name">Daniela Neves</div>
+            <div class="footer-logo-sub">Advogados</div>
+          </div>
+        </div>
+        <p class="footer-desc" data-i18n="footer.desc">Advocacia em direito da imigração para investidores que desejam residir em Portugal e na União Europeia.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/danielaneves.adv.pt/" target="_blank" title="Instagram">📸</a>
+          <a href="https://www.facebook.com/people/Daniela-Neves-advogada/100063755546359/" target="_blank" title="Facebook">👥</a>
+          <a href="https://danielaneves.adv.br/" target="_blank" title="Website">🌐</a>
+          <a href="https://wa.link/27opxs" target="_blank" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <div class="fcol-title" data-i18n="footer.col1">Serviços</div>
+        <ul>
+          <li><a href="#investimento" data-i18n="footer.s1">Golden Visa / ARI</a></li>
+          <li><a href="#beneficios" data-i18n="footer.s2">Reunificação Familiar</a></li>
+          <li><a href="#beneficios" data-i18n="footer.s3">Cidadania Portuguesa</a></li>
+          <li><a href="#faq" data-i18n="footer.s4">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <div class="fcol-title" data-i18n="footer.col2">Contacto</div>
+        <ul>
+          <li><a href="https://wa.link/27opxs" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:danielaneves-47953l@adv.oa.pt">Email Lisboa</a></li>
+          <li><a href="https://www.instagram.com/danielaneves.adv.pt/" target="_blank">Instagram</a></li>
+          <li><a href="https://danielaneves.adv.br/" target="_blank">danielaneves.adv.br</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2025 Daniela Neves Advogados. Todos os direitos reservados. Advogada registada na Ordem dos Advogados Portugueses.</p>
+      <div style="display:flex;gap:8px;">
+        <span class="oa-badge">OA 47953L</span>
+        <span class="oa-badge">OAB/SP 282.534</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ══════════════════════════════════════════
+   TRANSLATIONS
+══════════════════════════════════════════ */
+const T = {
+  pt: {
+    "meta.title": "Visto Gold Portugal | Daniela Neves Advogados",
+    "meta.desc":  "Obtenha a sua residência legal em Portugal através do Golden Visa. Assessoria jurídica em imigração com a Dra. Daniela Neves, OA 47953L.",
+    "nav.cta":    "Fale Conosco",
+    "hero.badge": "Golden Visa Portugal",
+    "hero.title": "Viva, Trabalhe e <em>Invista em Portugal</em>",
+    "hero.sub":   "Obtenha a sua residência legal em Portugal através do Golden Visa. Assessoria jurídica em imigração, processo orientado e dedicação total ao seu caso.",
+    "hero.btn1":  "Fale Conosco no WhatsApp",
+    "hero.btn2":  "Como Funciona",
+    "hero.stat1": "Clientes Atendidos",
+    "hero.stat2": "Taxa de Aprovação",
+    "hero.stat3": "Anos de Experiência",
+    "hero.stat4": "Escritórios",
+    "ben.eyebrow":"Por que Portugal?",
+    "ben.title":  "As Vantagens do <em>Golden Visa</em>",
+    "ben.sub":    "O programa ARI oferece um dos caminhos mais flexíveis do mundo para a residência europeia.",
+    "ben.1.t":"Residência em Portugal","ben.1.d":"Residência legal com apenas 7 dias de permanência por ano. Mantenha a sua vida onde quiser.",
+    "ben.2.t":"Reunificação Familiar","ben.2.d":"Inclua cônjuge, filhos e pais no mesmo processo. A família toda protegida sob um único visto.",
+    "ben.3.t":"Cidadania a partir de 5 Anos","ben.3.d":"Após 5 anos, pode solicitar a cidadania portuguesa e obter um dos passaportes mais poderosos do mundo.",
+    "ben.4.t":"Área Schengen Livre","ben.4.d":"Acesso sem visto a 26 países europeus. Liberdade de circulação por toda a Europa.",
+    "ben.5.t":"Trabalho em Toda a UE","ben.5.d":"Como cidadão português, aceda ao mercado de trabalho dos 27 países da União Europeia.",
+    "ben.6.t":"Educação de Excelência","ben.6.d":"Acesso às melhores universidades da Europa com propinas reduzidas para residentes portugueses.",
+    "inv.eyebrow":"Modalidades de Investimento",
+    "inv.title":  "Escolha a Via <em>Certa para Si</em>",
+    "inv.sub":    "Desde outubro de 2023, o investimento imobiliário foi encerrado. As opções qualificantes disponíveis são:",
+    "inv.pop":"✦ Mais Popular",
+    "inv.1.t":"Fundos de Investimento","inv.1.d":"Fundos regulados pela CMVM — private equity, venture capital, energia renovável, tecnologia e saúde. Maturidade mínima de 5 anos.",
+    "inv.2.t":"Doação Cultural","inv.2.d":"Doação para preservação do património cultural e artístico nacional. Redução para €200K em zonas de baixa densidade.",
+    "inv.3.t":"Criação de Emprego","inv.3.d":"Investimento em empresa existente com criação de mínimo 5 postos de trabalho a tempo inteiro por 3 anos.",
+    "proc.eyebrow":"Como Funciona",
+    "proc.title": "<em>4 Etapas</em> para a Sua Residência",
+    "proc.1.t":"Consulta Inicial","proc.1.d":"Analisamos o seu perfil, objetivos e elegibilidade para o programa.",
+    "proc.2.t":"Documentação","proc.2.d":"Preparamos e revisamos toda a documentação necessária para a candidatura.",
+    "proc.3.t":"Investimento","proc.3.d":"Orientamos na escolha e execução do investimento qualificado.",
+    "proc.4.t":"Submissão & Aprovação","proc.4.d":"Submetemos o pedido junto à AIMA e acompanhamos até à emissão do título de residência.",
+    "about.eyebrow":"A Advogada","about.badge":"Anos Exp.",
+    "about.title":"Dra. Daniela <em>Neves Martins</em>",
+    "about.p1":"Advogada com dupla inscrição em Portugal e no Brasil, com escritório em Lisboa no Parque das Nações. Com foco no direito da imigração, acompanha clientes de todo o mundo no processo do Golden Visa.",
+    "about.p2":"Com domínio fluente de português, inglês, espanhol e conhecimento do mercado internacional, oferece uma perspetiva única para investidores de qualquer país.",
+    "about.c1":"Inscrita desde 2009 · Direito da Imigração",
+    "about.c2":"Seccional São Paulo · Inscrita desde 2008",
+    "about.c3t":"Mestre em Ciências Jurídico-Forenses",
+    "about.c4":"Contacto profissional",
+    "about.btn":"Agendar Consulta",
+    "faq.eyebrow":"FAQ","faq.title":"Tire as Suas <em>Dúvidas</em>",
+    "faq.1.q":"Preciso morar em Portugal para manter o Golden Visa?","faq.1.a":"Não. O Golden Visa exige apenas 7 dias de permanência por ano no primeiro período e 14 dias nos períodos seguintes de 2 anos. Pode manter a sua vida no país de origem.",
+    "faq.2.q":"Qual é o valor mínimo de investimento?","faq.2.a":"O investimento mínimo mais utilizado é de €500.000 em fundos de investimento qualificados. A opção de doação cultural começa em €250.000.",
+    "faq.3.q":"Quanto tempo leva o processo?","faq.3.a":"O prazo médio de análise pela AIMA é de 12 a 18 meses em 2025. O prazo de 5 anos para cidadania conta desde a data de submissão.",
+    "faq.4.q":"Posso incluir a minha família?","faq.4.a":"Sim. O Golden Visa permite incluir cônjuge ou parceiro de facto, filhos menores (e maiores dependentes) e pais dependentes no mesmo processo.",
+    "faq.5.q":"O Golden Visa ainda existe em Portugal?","faq.5.a":"Sim, o programa continua ativo. Em 2023, a rota imobiliária foi encerrada, mas as rotas via fundos de investimento, doação cultural e criação de emprego seguem disponíveis.",
+    "cta.eyebrow":"⚠️ Alerta Legislativo",
+    "cta.title":"Inicie Hoje o Seu<br/><em>Processo de Residência</em>",
+    "cta.sub":"Uma proposta legislativa em tramitação pode alterar o prazo para a cidadania. Quem iniciar agora garante as regras atuais de 5 anos.",
+    "cta.btn1":"💬 Falar no WhatsApp","cta.btn2":"🌐 Visitar Website",
+    "off.eyebrow":"Onde Estamos","off.title":"Os Nossos <em>Escritórios</em>",
+    "footer.desc":"Advocacia em direito da imigração para investidores que desejam residir em Portugal e na União Europeia.",
+    "footer.col1":"Serviços","footer.col2":"Contacto",
+    "footer.s1":"Golden Visa / ARI","footer.s2":"Reunificação Familiar","footer.s3":"Cidadania Portuguesa","footer.s4":"Perguntas Frequentes",
+    "footer.copy":"© 2025 Daniela Neves Advogados. Todos os direitos reservados. Advogada registada na Ordem dos Advogados Portugueses."
+  },
+
+  en: {
+    "meta.title":"Golden Visa Portugal | Daniela Neves Lawyers",
+    "meta.desc":"Get your legal residency in Portugal through the Golden Visa. Legal immigration advice with Dr. Daniela Neves, OA 47953L.",
+    "nav.cta":"Contact Us",
+    "hero.badge":"Golden Visa Portugal",
+    "hero.title":"Live, Work and <em>Invest in Portugal</em>",
+    "hero.sub":"Obtain your legal residency in Portugal through the Golden Visa. Expert legal guidance, a structured process, and total dedication to your case.",
+    "hero.btn1":"Contact Us on WhatsApp","hero.btn2":"How It Works",
+    "hero.stat1":"Clients Served","hero.stat2":"Approval Rate","hero.stat3":"Years of Experience","hero.stat4":"Offices",
+    "ben.eyebrow":"Why Portugal?","ben.title":"The Benefits of the <em>Golden Visa</em>",
+    "ben.sub":"The ARI program offers one of the most flexible pathways in the world to European residency.",
+    "ben.1.t":"Residency in Portugal","ben.1.d":"Legal residency with only 7 days of stay per year. Keep your life wherever you want.",
+    "ben.2.t":"Family Reunification","ben.2.d":"Include your spouse, children and parents in the same process. The whole family protected under one visa.",
+    "ben.3.t":"Citizenship from 5 Years","ben.3.d":"After 5 years, you may apply for Portuguese citizenship and obtain one of the most powerful passports in the world.",
+    "ben.4.t":"Free Schengen Area","ben.4.d":"Visa-free access to 26 European countries. Freedom of movement throughout Europe.",
+    "ben.5.t":"Work Across the EU","ben.5.d":"As a Portuguese citizen, access the job market of all 27 EU member states without restrictions.",
+    "ben.6.t":"World-Class Education","ben.6.d":"Access to Europe's best universities with reduced tuition fees for Portuguese residents.",
+    "inv.eyebrow":"Investment Routes","inv.title":"Choose the <em>Right Path for You</em>",
+    "inv.sub":"Since October 2023, the real estate route has been closed. The available qualifying options are:",
+    "inv.pop":"✦ Most Popular",
+    "inv.1.t":"Investment Funds","inv.1.d":"CMVM-regulated funds — private equity, venture capital, renewable energy, technology and healthcare. Minimum 5-year maturity.",
+    "inv.2.t":"Cultural Donation","inv.2.d":"Donation for the preservation of national cultural and artistic heritage. Reduced to €200K in low-density areas.",
+    "inv.3.t":"Job Creation","inv.3.d":"Investment in an existing company with the creation of at least 5 full-time jobs for 3 years.",
+    "proc.eyebrow":"How It Works","proc.title":"<em>4 Steps</em> to Your Residency",
+    "proc.1.t":"Initial Consultation","proc.1.d":"We assess your profile, goals and eligibility for the program.",
+    "proc.2.t":"Documentation","proc.2.d":"We prepare and review all required documentation for the application.",
+    "proc.3.t":"Investment","proc.3.d":"We guide you through the selection and execution of the qualifying investment.",
+    "proc.4.t":"Submission & Approval","proc.4.d":"We submit the application to AIMA and follow it through until your residence permit is issued.",
+    "about.eyebrow":"The Lawyer","about.badge":"Years Exp.",
+    "about.title":"Dr. Daniela <em>Neves Martins</em>",
+    "about.p1":"Lawyer registered in both Portugal and Brazil, with an office in Lisbon at Parque das Nações. Focused on immigration law, she guides clients from around the world through the Golden Visa process.",
+    "about.p2":"Fluent in Portuguese, English and Spanish, with knowledge of the international market, she offers a unique perspective for investors from any country.",
+    "about.c1":"Registered since 2009 · Immigration Law",
+    "about.c2":"São Paulo Branch · Registered since 2008",
+    "about.c3t":"Master's in Legal-Forensic Sciences",
+    "about.c4":"Professional contact",
+    "about.btn":"Schedule a Consultation",
+    "faq.eyebrow":"FAQ","faq.title":"Your Questions, <em>Answered</em>",
+    "faq.1.q":"Do I need to live in Portugal to keep the Golden Visa?","faq.1.a":"No. The Golden Visa requires only 7 days of stay per year in the first period and 14 days in the following 2-year periods. You can keep your life in your home country.",
+    "faq.2.q":"What is the minimum investment amount?","faq.2.a":"The most commonly used minimum investment is €500,000 in qualifying investment funds. The cultural donation option starts at €250,000.",
+    "faq.3.q":"How long does the process take?","faq.3.a":"The average processing time by AIMA is 12 to 18 months in 2025. The 5-year period for citizenship counts from the date of submission.",
+    "faq.4.q":"Can I include my family?","faq.4.a":"Yes. The Golden Visa allows you to include your spouse or de facto partner, dependent children (including adult dependents) and dependent parents in the same process.",
+    "faq.5.q":"Does the Golden Visa still exist in Portugal?","faq.5.a":"Yes, the program is still active. In 2023, the real estate route was closed, but routes via investment funds, cultural donations and job creation remain available.",
+    "cta.eyebrow":"⚠️ Legislative Alert",
+    "cta.title":"Start Your <em>Residency Process</em> Today",
+    "cta.sub":"A proposed law currently in parliament may change the citizenship timeline. Those who start now are guaranteed the current 5-year rules.",
+    "cta.btn1":"💬 WhatsApp","cta.btn2":"🌐 Visit Website",
+    "off.eyebrow":"Where We Are","off.title":"Our <em>Offices</em>",
+    "footer.desc":"Immigration law practice for investors seeking to reside in Portugal and the European Union.",
+    "footer.col1":"Services","footer.col2":"Contact",
+    "footer.s1":"Golden Visa / ARI","footer.s2":"Family Reunification","footer.s3":"Portuguese Citizenship","footer.s4":"Frequently Asked Questions",
+    "footer.copy":"© 2025 Daniela Neves Advogados. All rights reserved. Lawyer registered with the Portuguese Bar Association."
+  },
+
+  es: {
+    "meta.title":"Visa Dorada Portugal | Daniela Neves Abogados",
+    "meta.desc":"Obtenga su residencia legal en Portugal a través de la Visa Dorada. Asesoría jurídica en inmigración con la Dra. Daniela Neves, OA 47953L.",
+    "nav.cta":"Contáctenos",
+    "hero.badge":"Visa Dorada Portugal",
+    "hero.title":"Viva, Trabaje e <em>Invierta en Portugal</em>",
+    "hero.sub":"Obtenga su residencia legal en Portugal a través de la Visa Dorada. Asesoría jurídica en inmigración, proceso orientado y dedicación total a su caso.",
+    "hero.btn1":"Contáctenos por WhatsApp","hero.btn2":"Cómo Funciona",
+    "hero.stat1":"Clientes Atendidos","hero.stat2":"Tasa de Aprobación","hero.stat3":"Años de Experiencia","hero.stat4":"Oficinas",
+    "ben.eyebrow":"¿Por qué Portugal?","ben.title":"Las Ventajas de la <em>Visa Dorada</em>",
+    "ben.sub":"El programa ARI ofrece uno de los caminos más flexibles del mundo hacia la residencia europea.",
+    "ben.1.t":"Residencia en Portugal","ben.1.d":"Residencia legal con solo 7 días de permanencia al año. Mantenga su vida donde desee.",
+    "ben.2.t":"Reunificación Familiar","ben.2.d":"Incluya cónyuge, hijos y padres en el mismo proceso. Toda la familia protegida bajo una sola visa.",
+    "ben.3.t":"Ciudadanía desde 5 Años","ben.3.d":"Tras 5 años, puede solicitar la ciudadanía portuguesa y obtener uno de los pasaportes más poderosos del mundo.",
+    "ben.4.t":"Espacio Schengen Libre","ben.4.d":"Acceso sin visa a 26 países europeos. Libertad de circulación por toda Europa.",
+    "ben.5.t":"Trabajo en toda la UE","ben.5.d":"Como ciudadano portugués, acceda al mercado laboral de los 27 países de la Unión Europea.",
+    "ben.6.t":"Educación de Excelencia","ben.6.d":"Acceso a las mejores universidades de Europa con matrículas reducidas para residentes portugueses.",
+    "inv.eyebrow":"Modalidades de Inversión","inv.title":"Elija la Vía <em>Correcta para Usted</em>",
+    "inv.sub":"Desde octubre de 2023, la ruta inmobiliaria fue cerrada. Las opciones calificantes disponibles son:",
+    "inv.pop":"✦ Más Popular",
+    "inv.1.t":"Fondos de Inversión","inv.1.d":"Fondos regulados por la CMVM — private equity, capital riesgo, energía renovable, tecnología y salud. Vencimiento mínimo de 5 años.",
+    "inv.2.t":"Donación Cultural","inv.2.d":"Donación para la preservación del patrimonio cultural y artístico nacional. Reducción a €200K en zonas de baja densidad.",
+    "inv.3.t":"Creación de Empleo","inv.3.d":"Inversión en empresa existente con creación de mínimo 5 puestos de trabajo a tiempo completo durante 3 años.",
+    "proc.eyebrow":"Cómo Funciona","proc.title":"<em>4 Pasos</em> hacia Su Residencia",
+    "proc.1.t":"Consulta Inicial","proc.1.d":"Analizamos su perfil, objetivos y elegibilidad para el programa.",
+    "proc.2.t":"Documentación","proc.2.d":"Preparamos y revisamos toda la documentación necesaria para la solicitud.",
+    "proc.3.t":"Inversión","proc.3.d":"Le orientamos en la elección y ejecución de la inversión calificada.",
+    "proc.4.t":"Presentación y Aprobación","proc.4.d":"Presentamos la solicitud ante la AIMA y la seguimos hasta la emisión del permiso de residencia.",
+    "about.eyebrow":"La Abogada","about.badge":"Años Exp.",
+    "about.title":"Dra. Daniela <em>Neves Martins</em>",
+    "about.p1":"Abogada con doble inscripción en Portugal y Brasil, con despacho en Lisboa en el Parque das Nações. Enfocada en derecho de inmigración, acompaña a clientes de todo el mundo en el proceso de Visa Dorada.",
+    "about.p2":"Con dominio fluido del portugués, inglés y español, y conocimiento del mercado internacional, ofrece una perspectiva única para inversores de cualquier país.",
+    "about.c1":"Inscrita desde 2009 · Derecho de Inmigración",
+    "about.c2":"Sección São Paulo · Inscrita desde 2008",
+    "about.c3t":"Máster en Ciencias Jurídico-Forenses",
+    "about.c4":"Contacto profesional",
+    "about.btn":"Programar una Consulta",
+    "faq.eyebrow":"FAQ","faq.title":"Sus Preguntas, <em>Respondidas</em>",
+    "faq.1.q":"¿Necesito vivir en Portugal para mantener la Visa Dorada?","faq.1.a":"No. La Visa Dorada exige solo 7 días de permanencia al año en el primer período y 14 días en los siguientes períodos de 2 años. Puede mantener su vida en su país de origen.",
+    "faq.2.q":"¿Cuál es el monto mínimo de inversión?","faq.2.a":"La inversión mínima más utilizada es de €500.000 en fondos de inversión calificados. La opción de donación cultural comienza en €250.000.",
+    "faq.3.q":"¿Cuánto tiempo tarda el proceso?","faq.3.a":"El plazo medio de análisis por la AIMA es de 12 a 18 meses en 2025. El plazo de 5 años para la ciudadanía cuenta desde la fecha de presentación.",
+    "faq.4.q":"¿Puedo incluir a mi familia?","faq.4.a":"Sí. La Visa Dorada permite incluir cónyuge o pareja de hecho, hijos menores (y mayores dependientes) y padres dependientes en el mismo proceso.",
+    "faq.5.q":"¿La Visa Dorada todavía existe en Portugal?","faq.5.a":"Sí, el programa sigue activo. En 2023 se cerró la ruta inmobiliaria, pero las rutas a través de fondos de inversión, donación cultural y creación de empleo siguen disponibles.",
+    "cta.eyebrow":"⚠️ Alerta Legislativa",
+    "cta.title":"Inicie Hoy Su <em>Proceso de Residencia</em>",
+    "cta.sub":"Una propuesta legislativa en trámite puede cambiar el plazo para la ciudadanía. Quien comience ahora garantiza las reglas actuales de 5 años.",
+    "cta.btn1":"💬 WhatsApp","cta.btn2":"🌐 Visitar Sitio Web",
+    "off.eyebrow":"Dónde Estamos","off.title":"Nuestras <em>Oficinas</em>",
+    "footer.desc":"Bufete especializado en derecho de inmigración para inversores que desean residir en Portugal y en la Unión Europea.",
+    "footer.col1":"Servicios","footer.col2":"Contacto",
+    "footer.s1":"Visa Dorada / ARI","footer.s2":"Reunificación Familiar","footer.s3":"Ciudadanía Portuguesa","footer.s4":"Preguntas Frecuentes",
+    "footer.copy":"© 2025 Daniela Neves Advogados. Todos los derechos reservados. Abogada inscrita en el Colegio de Abogados Portugués."
+  },
+
+  zh: {
+    "meta.title":"葡萄牙黄金签证 | Daniela Neves 律师事务所",
+    "meta.desc":"通过黄金签证获得葡萄牙合法居留权。Daniela Neves律师（OA 47953L）提供专业移民法律服务。",
+    "nav.cta":"联系我们",
+    "hero.badge":"葡萄牙黄金签证",
+    "hero.title":"在葡萄牙<em>生活、工作与投资</em>",
+    "hero.sub":"通过黄金签证获得葡萄牙合法居留权。专业移民法律指导，全程跟进您的案件。",
+    "hero.btn1":"WhatsApp联系我们","hero.btn2":"了解流程",
+    "hero.stat1":"服务客户","hero.stat2":"批准率","hero.stat3":"年从业经验","hero.stat4":"办事处",
+    "ben.eyebrow":"为什么选择葡萄牙？","ben.title":"黄金签证的<em>核心优势</em>",
+    "ben.sub":"ARI计划提供全球最灵活的欧洲居留途径之一。",
+    "ben.1.t":"葡萄牙居留权","ben.1.d":"每年仅需7天停留即可维持合法居留权。您可以在任何地方继续生活。",
+    "ben.2.t":"家庭团聚","ben.2.d":"配偶、子女和父母可纳入同一申请。全家人在一个签证下受到保护。",
+    "ben.3.t":"5年后可申请国籍","ben.3.d":"5年后可申请葡萄牙国籍，获得全球最强大的护照之一，免签190+国家。",
+    "ben.4.t":"申根区自由通行","ben.4.d":"免签进入26个欧洲国家，自由往来欧洲各地。",
+    "ben.5.t":"在欧盟全境工作","ben.5.d":"作为葡萄牙公民，可在欧盟27个成员国的劳动力市场自由就业。",
+    "ben.6.t":"卓越教育资源","ben.6.d":"以居民学费优惠进入欧洲顶尖大学，享受世界级教育资源。",
+    "inv.eyebrow":"投资方式","inv.title":"选择<em>适合您的途径</em>",
+    "inv.sub":"自2023年10月起，房地产路线已关闭。目前可用的合格投资选项为：",
+    "inv.pop":"✦ 最受欢迎",
+    "inv.1.t":"投资基金","inv.1.d":"CMVM监管基金——私募股权、风险投资、可再生能源、科技和医疗。最低5年期限。",
+    "inv.2.t":"文化捐赠","inv.2.d":"向国家文化和艺术遗产保护机构捐款。低密度地区最低可降至€200K。",
+    "inv.3.t":"创造就业","inv.3.d":"在现有企业投资，并在3年内创造至少5个全职工作岗位。",
+    "proc.eyebrow":"办理流程","proc.title":"<em>四步</em>获得居留权",
+    "proc.1.t":"初步咨询","proc.1.d":"评估您的个人情况、目标和项目申请资格。",
+    "proc.2.t":"文件准备","proc.2.d":"准备并审核申请所需的全部文件材料。",
+    "proc.3.t":"完成投资","proc.3.d":"指导您选择并完成合格投资。",
+    "proc.4.t":"提交与审批","proc.4.d":"向AIMA提交申请，全程跟进直至签发居留许可证。",
+    "about.eyebrow":"关于律师","about.badge":"年从业",
+    "about.title":"Daniela <em>Neves Martins</em> 博士",
+    "about.p1":"在葡萄牙和巴西双重注册的律师，办公室位于里斯本万国公园区。专注移民法，为全球客户提供黄金签证全程服务。",
+    "about.p2":"精通葡语、英语和西班牙语，熟悉国际市场，为各国投资者提供独特视角和专业支持。",
+    "about.c1":"2009年注册 · 移民法",
+    "about.c2":"圣保罗分会 · 2008年注册",
+    "about.c3t":"法律法证科学硕士",
+    "about.c4":"专业联系方式",
+    "about.btn":"预约咨询",
+    "faq.eyebrow":"常见问题","faq.title":"您的<em>疑问解答</em>",
+    "faq.1.q":"我需要住在葡萄牙才能保留黄金签证吗？","faq.1.a":"不需要。黄金签证仅要求第一年在葡萄牙停留7天，之后每两年停留14天。您可以继续在原居住地生活。",
+    "faq.2.q":"最低投资额是多少？","faq.2.a":"最常用的最低投资额为50万欧元（投资基金）。文化捐赠选项从25万欧元起。",
+    "faq.3.q":"办理流程需要多长时间？","faq.3.a":"2025年AIMA的平均审理周期为12至18个月。入籍的5年期限从提交申请之日起计算。",
+    "faq.4.q":"我可以将家人纳入申请吗？","faq.4.a":"可以。黄金签证允许将配偶或事实伴侣、未成年子女（含成年受抚养子女）及受抚养父母纳入同一申请。",
+    "faq.5.q":"葡萄牙黄金签证还存在吗？","faq.5.a":"是的，该项目仍然有效。2023年房地产路线关闭，但通过投资基金、文化捐赠和创造就业的路线仍然开放。",
+    "cta.eyebrow":"⚠️ 立法预警",
+    "cta.title":"立即启动您的<em>葡萄牙居留申请</em>",
+    "cta.sub":"议会正在审议一项可能改变入籍期限的法案。现在启动流程可保障您在现行5年规定下的权益。",
+    "cta.btn1":"💬 WhatsApp联系","cta.btn2":"🌐 访问官网",
+    "off.eyebrow":"我们的位置","off.title":"办事处<em>地址</em>",
+    "footer.desc":"专业移民法律服务，为希望在葡萄牙和欧盟居住的投资者提供全程支持。",
+    "footer.col1":"服务","footer.col2":"联系",
+    "footer.s1":"黄金签证 / ARI","footer.s2":"家庭团聚","footer.s3":"葡萄牙国籍","footer.s4":"常见问题",
+    "footer.copy":"© 2025 Daniela Neves Advogados。保留所有权利。律师已在葡萄牙律师协会注册。"
+  }
+};
+
+/* ══════════════════════════════════════════
+   LANGUAGE ENGINE
+══════════════════════════════════════════ */
+let currentLang = 'pt';
+
+function setLang(lang) {
+  currentLang = lang;
+  const dict = T[lang];
+
+  // Update meta
+  document.title = dict['meta.title'] || document.title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) metaDesc.content = dict['meta.desc'] || '';
+
+  // Update <html lang>
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+
+  // Update all [data-i18n] elements
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    if (dict[key] !== undefined) el.textContent = dict[key];
+  });
+
+  // Update all [data-i18n-html] elements
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.dataset.i18nHtml;
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+
+  // Active button
+  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.textContent.trim().toLowerCase() === (lang === 'zh' ? '中文' : lang)) {
+      btn.classList.add('active');
+    }
+  });
+
+  // Fix Chinese button detection
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    const t = btn.textContent.trim();
+    btn.classList.remove('active');
+    if ((lang === 'zh' && t === '中文') || t.toLowerCase() === lang) {
+      btn.classList.add('active');
+    }
+  });
+}
+
+/* ══════════════════════════════════════════
+   FAQ
+══════════════════════════════════════════ */
+function faqToggle(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+/* ══════════════════════════════════════════
+   HEADER SCROLL
+══════════════════════════════════════════ */
+window.addEventListener('scroll', () => {
+  document.querySelector('header').style.borderBottomColor =
+    window.scrollY > 40 ? 'rgba(201,163,46,0.2)' : 'rgba(255,255,255,0.1)';
+}, { passive: true });
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════ */
+const srObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); srObs.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.sr').forEach(el => srObs.observe(el));
+
+/* ══════════════════════════════════════════
+   SMOOTH SCROLL
+══════════════════════════════════════════ */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (!t) return;
+    e.preventDefault();
+    window.scrollTo({ top: t.getBoundingClientRect().top + scrollY - 72, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
